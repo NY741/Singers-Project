@@ -26,7 +26,7 @@
 import SingerItem from "../components/singers/SingerItem";
 
 export default {
-  inject: ["singers"],
+  // inject: ["singers"],
   components: {
     SingerItem,
   },
@@ -37,6 +37,9 @@ export default {
     };
   },
   computed: {
+    singers() {
+      return this.$store.getters["singers/singers"];
+    },
     sortRatingButtonText() {
       return `Sort by ${
         this.ratingSortDirIsAsc ? "Descending" : "Ascending"
@@ -72,10 +75,10 @@ export default {
       this.nameSortDirIsAsc = !this.nameSortDirIsAsc;
     },
   },
-  mounted() {
-    this.sortRating(this.ratingSortDirIsAsc);
-    this.sortName(this.nameSortDirIsAsc);
-  },
+  // mounted() {
+  //   this.sortRating(this.ratingSortDirIsAsc);
+  //   this.sortName(this.nameSortDirIsAsc);
+  // },
 };
 </script>
 

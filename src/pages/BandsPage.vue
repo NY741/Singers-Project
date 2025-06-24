@@ -16,12 +16,14 @@
 import BandItem from "@/components/bands/BandItem.vue";
 
 export default {
-  inject: ["bands"],
+  // inject: ["bands"],
   components: {
     BandItem,
   },
-  data() {
-    return {};
+  computed: {
+    bands() {
+      return this.$store.getters["bands/bands"];
+    },
   },
 };
 </script>

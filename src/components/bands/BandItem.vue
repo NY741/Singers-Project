@@ -30,13 +30,16 @@ export default {
     BaseCard,
   },
   props: ["id", "name", "genre", "members", "url"],
-  inject: ["singers"],
+  // inject: ["singers"],
   data() {
     return {
       membersAreShown: false,
     };
   },
   computed: {
+    singers() {
+      return this.$store.getters["singers/singers"];
+    },
     bandMembers() {
       let singers = [];
       for (let member of this.members) {
