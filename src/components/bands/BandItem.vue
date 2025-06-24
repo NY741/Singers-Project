@@ -62,13 +62,7 @@ export default {
 
 <style scoped>
 .card {
-  width: 50%;
-  min-width: 400px;
-  padding: 15px;
-  border: 1px dashed #225;
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0 0 5px #aaa;
+  max-width: 500px;
 }
 
 .flex-block {

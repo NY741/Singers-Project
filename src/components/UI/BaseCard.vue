@@ -6,7 +6,7 @@
 
 <style scoped>
 .card {
-    width: 60%;
+  width: 60%;
   min-width: 500px;
   padding: 15px;
   margin: auto;

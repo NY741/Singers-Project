@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import ErrorPage from "./pages/ErrorPage.vue";
 import SingersPage from "./pages/SingersPage.vue";
 import BandsPage from "./pages/BandsPage.vue";
+import AboutPage from "./pages/AboutPage.vue";
 import SingerDetails from "./components/singers/SingerDetails.vue";
 
 const router = createRouter({
@@ -27,6 +28,7 @@ const router = createRouter({
       ],
     },
     { name: "bands", path: "/bands", component: BandsPage },
+    { name: "about", path: "/about", component: AboutPage },
     { name: "errorPage", path: "/:notFound", component: ErrorPage },
   ],
 });

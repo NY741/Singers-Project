@@ -3,6 +3,7 @@
     <nav>
       <router-link to="/singers">Singers</router-link>
       <router-link to="/bands">Bands</router-link>
+      <router-link to="/about">About Us</router-link>
     </nav>
   </header>
 </template>
@@ -27,9 +28,9 @@ header {
 nav {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 50px;
 }
 
 a:visited,
